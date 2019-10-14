@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+
+    <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+
+    <block wx:else>
+
+      <view class="box">
+        <image class="image1" src="../img/more/title8.png"></image>
+        <open-data class="tou" type="userAvatarUrl"></open-data>
+      </view>
+
+      <image class="image2" src="../img/more/wave.png"></image>
+      <image class="fu" src="../img/more/wave.png"></image>
+
+      <view class="box2">
+
+        <image class="image3" src="../img/more/confirm-word1.png"></image>
+        <button class="but1">进去店铺</button>
+
+      </view>
+
+    </block>
+  </view>
+
+</view>
